@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "87fe52da-5aa9-4ce3-9f75-82d94a5e725e",
+		"name": "cinemas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all cinemas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create cinema",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"A\",\r\n    \"seats\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/cinemas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cinemas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specific seat number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "purchase-consecutive-seats",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cinemas/650425743e66ef7323a45457/purchase-consecutive-seats",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cinemas",
+						"650425743e66ef7323a45457",
+						"purchase-consecutive-seats"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
